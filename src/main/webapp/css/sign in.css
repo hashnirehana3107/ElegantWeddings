@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: url('https://img.freepik.com/free-photo/violet-flower-decoration-background_1150-6683.jpg?t=st=1741904797~exp=1741908397~hmac=60323400b178f45c30ca98f296ce43155d58689bcd6282f1d27aee989b5f68d4&w=1380') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #7f2dd2;
+  padding: 20px;
+}
+
+/* Left side - Welcome */
+.welcome-box {
+  flex: 1;
+  padding: 50px;
+  background: rgba(229, 213, 244, 0.8);
+  border-radius: 20px 0 0 20px;
+  color: #54059e;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-box h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+
+.welcome-box p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9e4e97;
+  margin-bottom: 40px;
+}
+
+/* Right side - Login */
+.login-box {
+  flex: 1;
+  background-color: rgba(224, 210, 239, 0.85);
+  padding: 40px;
+  border-radius: 0 20px 20px 0;
+  backdrop-filter: blur(8px);
+  color: #5523a6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.login-box h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #330460;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #6501d7;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #3510bd;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #3f0883, #9024dd);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+  text-align: center;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #651fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Sign up link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link p {
+  color: #54059e;
+}
+
+.signup-link a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  color: #4a0072;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  background: #54059e;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #2e1058;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .welcome-box, .login-box {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .welcome-box {
+      margin-bottom: 20px;
+  }
+}

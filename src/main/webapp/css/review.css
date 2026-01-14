@@ -1,0 +1,109 @@
+body {
+    background: url('https://img.freepik.com/free-photo/violet-flower-decoration-background_1150-6683.jpg?t=st=1741904797~exp=1741908397~hmac=60323400b178f45c30ca98f296ce43155d58689bcd6282f1d27aee989b5f68d4&w=1380') no-repeat center center/cover;
+}
+
+
+    #thank-you-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #0e0710;
+  }
+
+
+  
+  #headings  h1{
+    text-align: center;
+    color: #390592;
+  }
+
+  #headings  p{
+    text-align: center;
+    color: #460466;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #feedback-section {
+    display: grid;
+    place-items: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .star-rating {
+    direction: rtl;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .star-rating input {
+    display: none;
+  }
+  .star {
+    color: lightgray;
+    cursor: pointer;
+  }
+  .star:hover,
+  .star:hover ~ .star {
+    color: gold;
+  }
+  input:checked ~ label {
+    color: gold;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #a112da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(5, 3, 3, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #a112da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    background-color: #28632a;
+    color: white;
+    width: 188px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: #f44336;
+  }
+  button:hover,
+  .button:hover {
+    opacity: 0.8;
+  }
+  

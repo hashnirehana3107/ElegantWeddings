@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f1f1f1, #f9f9f9);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-title {
+    color: #3a3a3a;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Price Cards */
+.price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects */
+.card:hover .btn {
+    background-color: #c0392b;
+}
+
+/* Badge for Premium Package */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Package Titles */
+.card h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Price Styling */
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+/* List Items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+ul li i {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Color Themes for Packages */
+.card.basic-package {
+    background-color: #9ed991;
+}
+
+.card.standard-package {
+    background-color: #edc5ea;
+}
+
+.card.premium-package {
+    background-color: #6387a6;
+}
+
+.card.birthday-package {
+    background-color: #d59958;
+}
+
+.card.anniversary-package {
+    background-color: #4edfaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .price-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
